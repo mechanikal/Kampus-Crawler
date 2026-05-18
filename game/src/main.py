@@ -59,14 +59,9 @@ class Game:
         self.building_info = BuildingInfo(self)
         self.dt = 0
 
-        self.client = Client(Constants.SERVER_IP_ADDR, Constants.SERVER_PORT)  # comment for local server
-        # self.client = Client('127.0.0.1', 12345)  # uncomment for local server
-        # self.server = Server('0.0.0.0', 12345)  # uncomment for local server
+        self.client = Client(Constants.SERVER_IP_ADDR, Constants.SERVER_PORT)
+        
     def start_networking(self):
-        # Start server
-        # server_thread = threading.Thread(target=self.server.run_server, daemon=True)  #uncomment for local server
-        # server_thread.start()  #uncomment for local server
-
         # Start client
         self.client.disconnect = False
         client_thread = threading.Thread(target=Client.network_thread, args=(self.client, self.player), daemon=True)

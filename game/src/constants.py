@@ -22,7 +22,9 @@ class Constants:
     MAP_ORIGIN_X = 360
     MAP_ORIGIN_Y = 280
 
-    SERVER_IP_ADDR = "193.93.88.233"
+    # servers currently down. host a local server for multiplayer
+    # SERVER_IP_ADDR = "193.93.88.233"
+    SERVER_IP_ADDR = "localhost" # change to your local server ip
     SERVER_PORT = 49158
 
     entrences_campus_A = {
