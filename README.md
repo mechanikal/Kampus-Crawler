@@ -5,6 +5,13 @@ implemented in pygame
 the premise of the project is to help students get familiar with TUL campus map in a fun way  
 multiplayer server currently down
 
+Łódź University of Technilogy project 2025  
+Authors:  
+Stanisław Jaworski
+Krzysztof Wojtal
+Kacper Orkwiszewski
+Mateusz Jędraszczyk
+
 all commands need to be run from /game directory  
 Setting up and starting app:  
 py -m pip install pygame pytmx pillow pygame_textinput  
