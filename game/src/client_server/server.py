@@ -19,9 +19,12 @@ class Server:
             while True:
                 # get pickled player
                 player = recv_pickle(conn)
+                player.id = player_id
                 if player is None:
                     # Client disconnected
                     break
+                with self.lock:
+                    send_pickle(conn, player_id)
                 with self.lock:
                     self.players[player_id] = player
                 # send player number to all players
