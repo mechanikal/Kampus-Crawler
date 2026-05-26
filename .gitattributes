@@ -1,3 +1,4 @@
 game/**/*.html linguist-generated=true
 game/**/*.tex linguist-generated=true
 game/**/*.tsx linguist-generated=true
+game/**/*.tmx linguist-generated=true
